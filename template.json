@@ -649,7 +649,7 @@
     "host": {
       "name": ""
     }
-  }
+  },
   "Item": {
     "types": [
       "adeptpower",
@@ -710,7 +710,7 @@
       "duration": "I",
       "range": "S",
       "type": "P"
-    }
+    },
     "echo": {
       "templates": ["genesis"],
       "description": "",
@@ -810,7 +810,7 @@
     },
     "software": {
       "templates": ["genesis"],
-      "description"
+      "description": "",
       "hasRating": false,
       "rating": 0,
       "subtype": "Autosoft"
