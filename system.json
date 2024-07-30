@@ -35,5 +35,5 @@
     "primaryTokenAttribute": "physical",
     "secondaryTokenAttribute": "stun",
     "manifest": "https://github.com/yagrima/masseffect/releases/latest/download/system.json",
-    "download": "https://github.com/yagrima/masseffect/releases/download/v0.4/system.zip"
+    "download": "https://github.com/yagrima/masseffect/releases/download/v0.1/system.zip"
 }
