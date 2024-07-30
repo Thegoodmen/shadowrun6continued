@@ -1,7 +1,7 @@
 
 export async function GetSkillCheckOptions() {
 
-    const template = "systems/masseffect/templates/skillcheck-dialog.html";
+    const template = "systems/shadowrun6continued/templates/skillcheck-dialog.html";
     const html = await renderTemplate(template, {});
 
     return new Promise(resolve => {
@@ -34,7 +34,7 @@ function _processSkillCheckOptions(form){
 }
 
 export async function AdjustInitiative(wgs){
-    const template = "systems/masseffect/templates/initiative-dialog.html";
+    const template = "systems/shadowrun6continued/templates/initiative-dialog.html";
     let templateContext = {
         wgs: wgs
     }
@@ -69,7 +69,7 @@ function _processIntiativeOptions(form){
 }
 
 export async function MonitorAttackData() {
-    const template = "systems/masseffect/templates/shielddamage-dialog.html";
+    const template = "systems/shadowrun6continued/templates/shielddamage-dialog.html";
     const html = await renderTemplate(template, {});
 
     return new Promise(resolve => {
@@ -107,7 +107,7 @@ function _processShieldDamageOptions(form){
 }
 
 export async function MonitorDamageData(){
-    const template = "systems/masseffect/templates/dialog-directdamage.html";
+    const template = "systems/shadowrun6continued/templates/dialog-directdamage.html";
     const html = await renderTemplate(template, {});
 
     return new Promise(resolve => {
@@ -139,7 +139,7 @@ function _processDirectDamageOptions(form){
 }
 
 export async function MonitorHealingData(attributeBody){
-    const template = "systems/masseffect/templates/dialog-healing.html"; 
+    const template = "systems/shadowrun6continued/templates/dialog-healing.html"; 
     let templateContext = {
         body: attributeBody,
         doublebody: attributeBody*2

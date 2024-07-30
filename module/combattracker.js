@@ -2,7 +2,7 @@ import meCombatant from "./combatant.js";
 
 export default class meCombatTracker extends CombatTracker {
     get template() {
-        return "systems/masseffect/templates/combattracker.html";
+        return "systems/shadowrun6continued/templates/combattracker.html";
     }
     
     _onConfigureCombatant(li) {

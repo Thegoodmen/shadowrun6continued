@@ -13,7 +13,7 @@ export class SimpleActorSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["masseffect", "sheet", "actor"],
-      template: "systems/masseffect/templates/actor-sheet.html",
+      template: "systems/shadowrun6continued/templates/actor-sheet.html",
       width: 600,
       height: 600,
       tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description"}],

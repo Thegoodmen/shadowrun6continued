@@ -13,7 +13,7 @@ export async function genericCheck(actor){
     return doDiceMagic(actor,checkOptions.normaldice,checkOptions.wilddice,game.i18n.localize("masseffect.genericdiceroll"));
 }
 export async function attackCheck(actor,normaldice,wilddice,name,attributes,wgs,damagecode){  
-    const template = "systems/masseffect/templates/chat-attackcheck.html";
+    const template = "systems/shadowrun6continued/templates/chat-attackcheck.html";
     let rollResults= [];
     let d6result = null;
     const rollformula = "1d6";
@@ -133,7 +133,7 @@ export async function damageCodeDeck(actor,damagecode,attributes){
     for(let i=0;i<rollResults.length;i++){
         total += rollResults[i].isWild ? 0 : parseInt(rollResults[i].diceroll);
     }
-    const template = "systems/masseffect/templates/chat-damageroll.html";
+    const template = "systems/shadowrun6continued/templates/chat-damageroll.html";
     //for output purposes
     let attributeDisplayed = isExakt ? true : (levelKritisch > 0 || levelScharf > 0 ? true : false);
     let templateContext = { 
@@ -159,7 +159,7 @@ export async function damageCodeDeck(actor,damagecode,attributes){
 }
 
 export async function doDiceMagic(actor,normaldice,wilddice,name){ 
-    const template = "systems/masseffect/templates/chat-skillcheck.html";
+    const template = "systems/shadowrun6continued/templates/chat-skillcheck.html";
     let rollResults = [];
     let d6result = null;
     const rollformula = "1d6";

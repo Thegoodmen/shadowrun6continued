@@ -25,7 +25,7 @@ export async function onHealing(actordata,event) {
       heal: increasedHealth, 
       exhaustion:increasedExhaustion
     };
-    createChatMessage(actor,templateContext,"systems/masseffect/templates/chat-healconfirmation.html");
+    createChatMessage(actor,templateContext,"systems/shadowrun6continued/templates/chat-healconfirmation.html");
     await actordata.actor.update({
       "system.health.value": actordata.data.health.value,
       "system.exhaustion.value": actordata.data.exhaustion.value
@@ -88,7 +88,7 @@ export async function onGenericRoll(actordata,event) {
       oldvalue: parseInt(newInitiative-checkOptions.realwgs),
       newvalue: newInitiative
     };
-    createChatMessage(actor,templateContext,"systems/masseffect/templates/chat-tickconfirmation.html");
+    createChatMessage(actor,templateContext,"systems/shadowrun6continued/templates/chat-tickconfirmation.html");
   }
   export async function rollDamageCode(event){
     event.preventDefault();
@@ -133,7 +133,7 @@ export async function onGenericRoll(actordata,event) {
       reducedbarrier: reducedbarrier,
       reducedhealth: reducedhealth
     };
-    createChatMessage(actor,templateContext,"systems/masseffect/templates/chat-damageconfirmation.html");
+    createChatMessage(actor,templateContext,"systems/shadowrun6continued/templates/chat-damageconfirmation.html");
     await actordata.actor.update({
       "system.health.value": actordata.data.health.value,
       "system.barrier.value": actordata.data.barrier.value
@@ -147,7 +147,7 @@ export async function onGenericRoll(actordata,event) {
     let element = event.currentTarget.closest(".rollitem").dataset;
     actordata.data.barrier.value = actordata.data.barrier.max;
     //create chat output
-    createChatMessage(actor,{},"systems/masseffect/templates/chat-barrierrenegeration.html");
+    createChatMessage(actor,{},"systems/shadowrun6continued/templates/chat-barrierrenegeration.html");
     await actordata.actor.update({"system.barrier.value": actordata.data.barrier.value});
     actordata.actor.render(); 
   }
@@ -167,7 +167,7 @@ export async function onGenericRoll(actordata,event) {
       damage: damageOptions.damage, 
       reducedhealth: reducedhealth
     };
-    createChatMessage(actor,templateContext,"systems/masseffect/templates/chat-damageconfirmation.html");
+    createChatMessage(actor,templateContext,"systems/shadowrun6continued/templates/chat-damageconfirmation.html");
     await actordata.actor.update({
       "system.health.value": actordata.data.health.value
     });
